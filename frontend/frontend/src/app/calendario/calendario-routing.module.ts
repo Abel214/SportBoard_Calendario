@@ -8,12 +8,8 @@ import {CardMenuComponent} from './card-menu/card-menu.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'card-menu',
+    redirectTo: 'calendar',
     pathMatch: 'full'
-  },
-     {
-    path: 'card-menu',
-    component: CardMenuComponent
   },
     {
       path: 'calendar',

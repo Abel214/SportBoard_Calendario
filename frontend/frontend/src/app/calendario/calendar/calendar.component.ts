@@ -13,7 +13,7 @@ export class CalendarComponent {
   nombreMesActual: string = '';
   anioActual: number = 0;
   diasCalendario: any[] = [];
-  constructor(private router: Router) {} // Inyecta Router en el constructor
+  constructor(private router: Router) {}
   // Datos de ejemplo de partidos
   private partidos = [
     { fecha: new Date(2024, 9, 3), equipoLocal: 'Barcelona SC', marcadorLocal: 5, equipoVisitante: 'Emelec', marcadorVisitante: 0 },
@@ -108,12 +108,12 @@ export class CalendarComponent {
 
   navigateToGroups() {
     console.log('Navegar a la página de grupos');
-    this.router.navigate(['/calendario/sorteo']);// Ajusta la ruta según tu configuración
+    this.router.navigate(['/calendario/sorteo']);
   }
 
   gestionarPartidos() {
     console.log('Gestionar partidos: mostrar la vista de gestión');
-    this.router.navigate(['/calendario/matchtable']); // Ajusta la ruta según tu configuración
+    this.router.navigate(['/calendario/matchtable']);
   }
   equipos = [
   { id: 1, nombre: 'Barcelona SC' },
@@ -138,7 +138,7 @@ temporadas = [
 filtrarEquipo(event: Event) {
   const idEquipo = (event.target as HTMLSelectElement).value;
   console.log('Filtrar por equipo con ID:', idEquipo);
-  // Aquí puedes agregar lógica para filtrar partidos por equipo
+  // Aquí la lógica para filtrar partidos por equipo
 }
 
 filtrarCategoria(event: Event) {
