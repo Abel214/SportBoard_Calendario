@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Round {
+    private Integer id;
     private Date startDate;
     private Date finishDate;
     private ArrayList<Match> matches = new ArrayList<>();
