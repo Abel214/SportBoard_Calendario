@@ -1,6 +1,7 @@
 package com.pentavirato.calendarioModule.modelo;
 
 public class PlayingField {
+    private Integer id;
     private String name;
     private Address address;
 

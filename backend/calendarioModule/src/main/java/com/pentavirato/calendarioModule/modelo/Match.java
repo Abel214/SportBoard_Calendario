@@ -4,6 +4,7 @@ import java.sql.Date;
 import java.sql.Time;
 
 public class Match {
+    private Integer id;
     private Date date;
     private Time startTime;
     private Team homeTeam;
