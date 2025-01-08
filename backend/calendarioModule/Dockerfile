@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/calendarioModule-0.0.1-SNAPSHOT.jar app.jar
 
 # Expone el puerto que usa Spring Boot
-EXPOSE 8080
+EXPOSE 9000
 
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "app.jar"]
