@@ -22,7 +22,7 @@ import { SharedModule } from './shared/shared.module';
 
 
 export class AppComponent {
-    title = 'frontend';
+    title = 'spa';
     isSidebarOpen = true;
 
     onToggleSidebar() {
